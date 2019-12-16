@@ -57,7 +57,7 @@ func (r *scriptRenderer) renderCodeBlock(w util.BufWriter, source []byte, node a
 					}
 				}
 				if path == "" {
-					return
+					break
 				}
 			} else {
 				r.Output[path] = append(r.Output[path], value...)
